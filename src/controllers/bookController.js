@@ -1,12 +1,6 @@
 const pool = require("../config/conexion");
 
 exports.getBooks = (req, res) => {
-  // pool.getConnection((error, connection) => {
-  //   if (error) {
-  //     res.json({ message: "Error en el servidor" });
-  //   }
-  // })
-
   const sql = "SELECT * FROM books;";
   pool.query(sql, (err, result, fields) => {
     if(err) {
