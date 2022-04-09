@@ -10,7 +10,7 @@ exports.getCompanies = (req, res) => {
         res.json({message: 'Falta parametros'})
     }
 
-    const filtered = providers.filter(x => x.name.toLocaleLowerCase().includes(query.toLocaleLowerCase()));
+    const filtered = providers.filter(x => x.name.toLowerCase().includes(query.toLowerCase()));
 
     const response = {
         companies: [...filtered],
