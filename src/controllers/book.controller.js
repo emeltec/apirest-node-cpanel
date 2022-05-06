@@ -30,7 +30,7 @@ exports.createBook = (req, res) => {
     if(err) {
       res.json({ message: "Error al guardar en BD" });
     }
-    res.json(result)
+    res.json({message: "Nuevo libro agregado"})
   })
 }
 
@@ -43,7 +43,7 @@ exports.updateBookById = (req, res) => {
     if(err) {
       res.json({ message: "Error al actualizar" });
     }
-    res.json(result)
+    res.json({message: "Libro actualizado"})
   })
 }
 
@@ -55,6 +55,6 @@ exports.deleteBookById = (req, res) => {
     if(err) {
       res.json({ message: "Error al eliminar" });
     }
-    res.json(result)
+    res.json({message: "Un libro eliminado"})
   })
 }

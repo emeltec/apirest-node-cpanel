@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express();
 
-const bookController = require('../controllers/bookController')
-const companyController = require('../controllers/companyController')
+const bookController = require('../controllers/book.controller')
+const companyController = require('../controllers/company.controller')
 
 module.exports = () => {
     router.get('/books', bookController.getBooks);

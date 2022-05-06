@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cors());
 
 // Rutas del app
-app.use('/', routes());
+app.use('/msbm/', routes());
 
 app.listen(PORT, () => {
   console.log('Running server on port', PORT)
