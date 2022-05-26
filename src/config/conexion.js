@@ -5,9 +5,9 @@ const mysql = require('mysql2');
  */
 // const config = {
 //   host: "localhost",
-//   user: "blacqlcq_userdb1test",
-//   password: "dwAX9p57B@e8",
-//   database: "blacqlcq_db1test"
+//   user: "blacqlcq_books_user",
+//   password: "Di8{q3vz3myy",
+//   database: "blacqlcq_books_db"
 // };
 
 /**
